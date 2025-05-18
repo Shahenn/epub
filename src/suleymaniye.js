@@ -52,6 +52,7 @@ getURL("https://www.suleymaniyevakfimeali.com/").then(body => {
     })
     Promise.all(promises).then( sureler => {
         saveFile('output/Süleymaniye.json', JSON.stringify({name:'Süleymaniye', sures: sureler}))
-        createEPUB("Süleymaniye Vakfı", sureler, 'output/Süleymaniye Meali.epub')
+        createEPUB("Süleymaniye Vakfı", sureler, 'output/Süleymaniye Meali github.epub')
     })
 });
+
